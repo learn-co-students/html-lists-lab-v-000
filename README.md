@@ -68,25 +68,13 @@ categories and one or more items in _each_:
 <ul>
   <li>Sandwiches
     <ul>
-      <li>Ham and Cheese</li>
       <li>Grilled Cheese</li>
+        <ul>
+          <li>2 slices of bread</li>
+          <li>4 slices of cheese</li>
+          <li>1 tbsp of butter</li>
+        </ul>
     </ul>
-  </li>
-  <li>Snacks
-    <li>Nacho Cheese French Fries</li>
-    <li>Cheese and crackers</li>
-  </li>
-  <li>Soups
-    <ul>
-      <li>Cheese soup</li>
-    </ul>
-  </li>
-  <li>Sushi
-    <ul>
-      <li>Spicy Salmon Rolls</li>
-      <li>California Rolls</li>
-    </ul>
-  </li>
 </ul>
 ```
 
@@ -99,7 +87,7 @@ us to easily display related and nested content in a readable format.
 
 The first part of this challenge is to make the first 2 tests pass by:
 
-1. Creating an unordered list 
+1. Creating an unordered list
 2. Nesting each grilled cheese ingredient as a list item wrapped in `<li>` tags
 
 Start up `httpserver` or open `index.html` in your browser. Let's say we wanted
@@ -173,7 +161,7 @@ following example will be displayed the same as the previous:
 
 To complete the challenge write the necessary HTML to pass the tests:
 
-3. Create an ordered list 
+3. Create an ordered list
 4. Nest each step for creating grilled cheese as a list item wrapped in `<li>` tags
 
 Okay, so we've got our grilled cheese ingredients, but what about the steps
@@ -185,7 +173,7 @@ with a square of butter. The steps to making a basic grilled cheese would be:
 fry for 2 minutes`
 
 ***
-Once you've written an ordered list that displays these 5 steps correctly, run `learn` 
+Once you've written an ordered list that displays these 5 steps correctly, run `learn`
 to see the tests pass.
 ***
 
