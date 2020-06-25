@@ -14,16 +14,7 @@ RSpec.describe 'index.html' do
   end
 
 
-  it 'contains a nested <ul> tag' do
-    ul = parsed_html.search('ul').first
-    children = ul.children.select {|child| child.name == "li"}
-    subchildren = children.select {|child| child.children.length > 0}
-    nested_ul = subchildren.any? {|sc| sc.children.any? {|ch| ch.name == "ul"}}
-    nested_children = subchildren.select {|sc| sc.children.any? {|ch| ch.name == "ul"}}.select {|sc| sc.children.length > 1}
-
-    expect(nested_ul).to be == true, "Add a nested <ul> tag inside one of the unordered <li>"
-    expect(nested_children[0].children[1].children.length).to be >= 3, "Make sure to list out the three cheese types in the nested list"
-  end
+  
 
   it 'contains a <ol> tag' do
     ol = parsed_html.search('ol').first
